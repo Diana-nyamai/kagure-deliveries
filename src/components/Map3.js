@@ -54,22 +54,12 @@ class Map3 extends Component {
         <Map
           google={this.props.google}
           style={{ width: "100%", height: "100%" }}
-          containerStyle={{
-            height: "100vh",
-            width: "100vw",
-          }}
+          containerStyle={{height: "100vh",width: "100vw",}}
           zoom={15}
-          initialCenter={{
-            lat: -1.298982,
-            lng: 36.776811,
-          }}
+          initialCenter={{lat: -1.298982,lng: 36.776811,}}
         >
           <Polyline path={this.path} options={{ strokeColor: "#ff0000" }} />
-          <Marker
-            key="marker_1"
-            onClick={this.onMarkerClick}
-            title={"driver A"}
-            name={"Driver A -1.300355, 36.773850 "}
+          <Marker key="marker_1" onClick={this.onMarkerClick} title={"driver A"} name={"Driver A -1.300355, 36.773850 "}
             icon={{
               url: "./2.svg",
               // eslint-disable-next-line no-undef
